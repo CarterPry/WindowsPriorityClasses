@@ -24,6 +24,9 @@ int main(void) {
     STARTUPINFOW si = {0};
     PROCESS_INFORMATION pi = {0};
 
+
+
+    
     void highPriorityCalculator() {
         if (!CreateProcessW(
             L"C:\\Windows\\System32\\mspaint.exe",
@@ -34,8 +37,8 @@ int main(void) {
             HIGH_PRIORITY_CLASS,
             NULL,
             NULL,
-            &si,
-            &pi
+            &si,   // Don't have to worry about these for the time being
+            &pi    //
         ))
         {
 
@@ -43,7 +46,10 @@ int main(void) {
         return 1;
 
         }   
-    }   
+    }
+
+
+    
     void lowPriorityCalculator() {
         if (!CreateProcessW(
             L"C:\\Windows\\System32\\mspaint.exe",
@@ -64,9 +70,12 @@ int main(void) {
 
         }   
     }   
+
+
+    //Can call the program with either high or low priority with these 2 funcitons I made, see the 6th parameter for reference or 'dwCreationFlags'
     
     highPriorityCalculator();
-    //lowPriorityCalculator();
+    //lowPriorityCalculator();    
 
     return 0;
 }
