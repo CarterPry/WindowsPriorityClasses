@@ -27,7 +27,7 @@ int main(void) {
 
 
     
-    void highPriorityCalculator() {
+    void highPriorityPaint() {
         if (!CreateProcessW(
             L"C:\\Windows\\System32\\mspaint.exe",
             NULL,
@@ -50,7 +50,7 @@ int main(void) {
 
 
     
-    void lowPriorityCalculator() {
+    void lowPriorityPaint() {
         if (!CreateProcessW(
             L"C:\\Windows\\System32\\mspaint.exe",
             NULL,
@@ -74,8 +74,8 @@ int main(void) {
 
     //Can call the program with either high or low priority with these 2 funcitons I made, see the 6th parameter for reference or 'dwCreationFlags'
     
-    highPriorityCalculator();
-    //lowPriorityCalculator();    
+    highPriorityPaint();
+    //lowPriorityPaint();    
 
     return 0;
 }
