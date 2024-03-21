@@ -1,5 +1,5 @@
 # Windows Process Priority Setter Script
-This script adjusts the priority of the MsPaint software on Windows systems using the `CreateProcessW` function with the Win32 API. I used the (Windows Documentation)[https://learn.microsoft.com/en-us/windows/win32/api/_processthreadsapi/] for the built in functions I used. The priority level of a process prettu much determines how much CPU time it gets compared to the other running processes. Changine the priority level can be extremely important foy system performance and could crash your computer. For example if too much CPU usuage was being used on 1 or more processes, depending on your system resources, even your keyboard and mouse wouldn't be able to function normally because all the focus is now on that modified process.
+This script adjusts the priority of the MsPaint software on Windows systems using the `CreateProcessW` function with the Win32 API. I used the [Windows Documentation](https://learn.microsoft.com/en-us/windows/win32/api/_processthreadsapi/) for the built in functions I used. The priority level of a process prettu much determines how much CPU time it gets compared to the other running processes. Changine the priority level can be extremely important foy system performance and could crash your computer. For example if too much CPU usuage was being used on 1 or more processes, depending on your system resources, even your keyboard and mouse wouldn't be able to function normally because all the focus is now on that modified process.
 
 
 ## Why Process Priority is Important
@@ -13,7 +13,7 @@ A higher can be beneficial for time tasks like anit-viruses, howver if a malicou
 
 
 ## Process Priority Levels
-Below is the table of the different priority levels that can be assigned to processes or threads from the (Win32 Documentation)[https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-getpriorityclass]:
+Below is the table of the different priority levels that can be assigned to processes or threads from the [Win32 Documentation](https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-getpriorityclass):
 
 | Priority Class                 | Hexadecimal | Description                                                                                                  |
 |--------------------------------|-------------|--------------------------------------------------------------------------------------------------------------|
